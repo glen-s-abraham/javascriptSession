@@ -8,27 +8,32 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="display: inline-flex;flex-direction:column;">
-    <div style="display: inline-flex;flex-direction:row;">
-    <div style="margin: 10px;border: 10px solid black;">
-        <img id="computer" src="img/paper.png" width="200" height="200" />
-        <h1>Computer</h1>
+    <div style="margin-left: 55%;transform: translateX(-50%);margin-top: 5%;">
+        <div style="display: inline-flex;flex-direction:column;">
+            <div style="display: inline-flex;flex-direction:row;">
+                <div style="margin: 10px;border: 10px solid black;">
+                    <img id="player" src="img/rock.png" width="200" height="200" />
+                    <h1 style="margin-left: 50%;transform: translateX(-50%);">Player</h1>
+                </div>
+                <div style="margin: 10px;border: 10px solid black;">
+                    <img id="computer" src="img/rock.png" width="200" height="200" />
+                    <h1 style="margin-left: 45%;transform: translateX(-50%);">Computer</h1>
+                </div>
+            </div>
+                <div style="display: inline-flex;flex-direction:row;">
+                    <div style="display: inline-flex;flex-direction: row">
+                        <h2 style="width:208px;margin: 16px;border: 2px solid black;">Player<p id="playerScore">0</p></h2>
+                        <h2 style="width:208px;margin: 16px;border: 2px solid black;">Computer<p id="computerScore">0</p></h2>
+                    
+                </div>
+            </div>
+            <div style="display: inline-flex;flex-direction:row;margin-left: 28%;">
+                <button><img id="rockButton" src="img/rock.png" width="50" height="50" /></button>
+                <button><img id="paperButton" src="img/paper.png" width="50" height="50" /></button>
+                <button><img id="siccorsButton" src="img/siccors.png" width="50" height="50" /></button>
+            </div>
+        </div>
     </div>
-    <div style="margin: 10px;border: 10px solid black;">
-        <img id="player" src="img/rock.png" width="200" height="200" />
-        <h1>Player</h1>
-    </div>
-    </div>
-    <div style="display: inline-flex;flex-direction:row;">
-        <h2>Computer:<p id="computerScore">0</p></h2>
-        <h2>Player:<p id="playerScore">0</p></h2>
-    </div>
-    <div style="display: inline-flex;flex-direction:row;">
-        <button><img id="rockButton" src="img/rock.png" width="50" height="50" /></button>
-        <button><img id="paperButton" src="img/paper.png" width="50" height="50" /></button>
-        <button><img id="siccorsButton" src="img/siccors.png" width="50" height="50" /></button>
-    </div>
-</div>
    <script src="js/script.js"></script>
 </body>
 </html>
