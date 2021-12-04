@@ -1,0 +1,43 @@
+body {
+  background-image: url("/Weather/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#formContainer {
+  width: 500px;
+  height: 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10%;
+}
+
+#cityName {
+  width: 80%;
+  height: 56px;
+  font-size: 30px;
+}
+
+#check {
+  width: 15%;
+  height: 60px;
+  margin: 0;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+}
+
+#weatherDetails {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 20%;
+}
+.weatherItem {
+  background-color: gainsboro;
+  height: 50px;
+  width: 140px;
+  margin: 80px;
+  text-align: center;
+  opacity: 0.7;
+}
