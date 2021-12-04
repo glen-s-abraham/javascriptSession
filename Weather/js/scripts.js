@@ -16,12 +16,18 @@ const getCityName=()=>{
     //     .catch(err=>console.log(err));
 
     //async await
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${appId}&units=metric`);
-    const data = await response.json();
-    console.log(data);
-    document.querySelector("#temp").innerHTML=`${data.main.temp}<sup>0</sup>C`;
-    document.querySelector("#humidity").innerHTML=`${data.main.humidity}%`;
-    document.querySelector("#wind").innerHTML=`${data.wind.speed}Km/h`;
+    try{
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${appId}&units=metric`);
+        const data = await response.json();
+        console.log(data);
+        document.querySelector("#temp").innerHTML=`${data.main.temp}<sup>0</sup>C`;
+        document.querySelector("#humidity").innerHTML=`${data.main.humidity}%`;
+        document.querySelector("#wind").innerHTML=`${data.wind.speed}Km/h`;
+    }catch(err)
+    {
+        console.log(err);
+    }
+    
 }
 
 document.querySelector("#check").addEventListener("click",fetchData);

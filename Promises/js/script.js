@@ -39,22 +39,23 @@
 // });
 
 //Promises Alternative with Async Await
-let task1 =()=>{return new Promise((resolve,reject)=>{
-    setTimeout(()=>resolve("1.task 1"),700);
-})};
-let task2 =()=>{return new Promise((resolve,reject)=>{
-    setTimeout(()=>resolve("2.task 2 dependant on task 1"),600);
-})};
-let task3 =()=>{return new Promise((resolve,reject)=>{
-    setTimeout(()=>resolve("3.task 3 dependant on task 1"),500);
-})};
+// let task1 =()=>{return new Promise((resolve,reject)=>{
+//     setTimeout(()=>resolve("1.task 1"),700);
+// })};
+// let task2 =()=>{return new Promise((resolve,reject)=>{
+//     setTimeout(()=>resolve("2.task 2 dependant on task 1"),600);
+// })};
+// let task3 =()=>{return new Promise((resolve,reject)=>{
+//     setTimeout(()=>resolve("3.task 3 dependant on task 1"),500);
+// })};
 
-let asyncFunction=async()=>{
-    let message1=await task1();
-    console.log(message1);
-    let message2=await task2();
-    console.log(message2);
-    let message3=await task3();
-    console.log(message3);
-}
-asyncFunction();
+// let asyncFunction=async()=>{
+//     let message1=await task1();
+//     console.log(message1);
+//     let message2=await task2();
+//     console.log(message2);
+//     let message3=await task3();
+//     console.log(message3);
+// }
+// asyncFunction();
+
