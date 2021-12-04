@@ -22,6 +22,7 @@ const validate=()=>{
     const userName=document.querySelector("#userName");
     const email=document.querySelector("#email");
     const mobile=document.querySelector("#mobile");
+    
     //Username validation
     if(userName.value===""||
         userName.value.length<5 
