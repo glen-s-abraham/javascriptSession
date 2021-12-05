@@ -63,12 +63,22 @@ const setScores=()=>{
     document.querySelector("#computerScore").innerHTML=computerScore;
 }
 
-document.querySelector("#rockButton").addEventListener('click',(e)=>{
-    play('rock');
-});
-document.querySelector("#paperButton").addEventListener('click',(e)=>{
-    play('paper');
-});
-document.querySelector("#siccorsButton").addEventListener('click',(e)=>{
-    play('siccors');
-});
+//refactored to add EventBubbling
+// document.querySelector("#rockButton").addEventListener('click',(e)=>{
+//     play('rock');
+// });
+// document.querySelector("#paperButton").addEventListener('click',(e)=>{
+//     play('paper');
+// });
+// document.querySelector("#siccorsButton").addEventListener('click',(e)=>{
+//     play('siccors');
+// });
+
+document.querySelector("#symbolButtons").addEventListener('click',(e)=>{
+    if(e.target.id=='rockButton')
+        play('rock');
+    if(e.target.id=='paperButton')
+        play('paper');
+    if(e.target.id=='siccorsButton')
+        play('siccors');
+})
