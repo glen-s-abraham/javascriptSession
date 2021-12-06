@@ -1,4 +1,4 @@
-const appId="".toString();
+const appId="";
 const getCityName=()=>{
     let cityName=document.querySelector("#cityName").value;
     return cityName;
