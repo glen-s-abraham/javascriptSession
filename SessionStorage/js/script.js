@@ -4,7 +4,8 @@ const authenticate=()=>{
     //mock authentication
     const token=getTokenFromServer(user,password);
     sessionStorage.setItem('token',token);
-    document.querySelector('#token').innerHTML=token;
+    setTokenOnDom();
+    
 }
 
 const getTokenFromServer=(user,password)=>{
@@ -15,3 +16,8 @@ const getTokenFromServer=(user,password)=>{
 
 document.querySelector('#login').addEventListener('click',authenticate);
 
+const setTokenOnDom=()=>{
+    document.querySelector('#token').innerHTML=sessionStorage.getItem('token');
+}
+
+setTokenOnDom();
